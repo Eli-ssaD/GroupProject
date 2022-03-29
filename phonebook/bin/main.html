@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+
+        /* Container for flexboxes */
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        /* Style the navigation menu */
+  nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 15%;
+}
+
+nav li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+  
+}
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #eee;
+            color: black;
+            display: flex;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav ul a {
+            background-color: #eee;
+            color: black;
+            display: flex;
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+        nav ul a:hover {
+            background-color: #ccc;
+        }
+
+        nav ul a.active {
+            background-color: grey;
+            color: white;
+        }
+
+
+        /* Style the contact list */
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h2>Phonebook</h2>
+    </header>
+
+    <section>
+        <nav>
+            <div class="vertical-menu">
+
+                <a href="#"> A</a>
+                <a href="#"> B</a>
+                <a href="#"> C</a>
+                <a href="#"> D</a>
+                <a href="#"> E </a>
+                <a href="#"> H</a>
+                <a href="#"> I</a>
+                <a href="#"> J</a>
+                <a href="#"> K</a>
+                <a href="#"> L</a>
+                <a href="#"> M</a>
+                <a href="#"> N</a>
+                <a href="#"> O</a>
+                <a href="#"> P</a>
+                <a href="#"> Q</a>
+                <a href="#"> R</a>
+                <a href="#"> S</a>
+                <a href="#"> T</a>
+                <a href="#"> U</a>
+                <a href="#"> V</a>
+                <a href="#"> W</a>
+                <a href="#"> X</a>
+                <a href="#"> Y</a>
+                <a href="#"> Z</a>
+            </div>
+        </nav>
+
+        <article>
+            <h2>Contact List</h2>
+
+            <div class="myUL">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+                    title="Type in a name">
+
+                <ul id="myUL">
+                    <li><a href="#">Adele</a></li>
+                    <li><a href="#">Agnes</a></li>
+
+                    <li><a href="#">Billy</a></li>
+                    <li><a href="#">Bob</a></li>
+
+                    <li><a href="#">Calvin</a></li>
+                    <li><a href="#">Christina</a></li>
+                    <li><a href="#">Cindy</a></li>
+                </ul>
+        </article>
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
